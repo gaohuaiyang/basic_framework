@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<properties>
+		<property name="dialect" value="mysql" />
+	</properties>
+
+	<settings>
+		<setting name="lazyLoadingEnabled" value="false" />
+		<setting name="cacheEnabled" value="false" />
+	</settings>
+
+	<!-- 引入SQL配置文件
+	<mappers>
+		<mapper resource="com/xztz/mall/dao/product/ProductMapper.xml"/>
+	</mappers>
+	-->
+
+	<!-- <plugins>
+		<plugin interceptor="com.hf.common.page.PagePlugin">
+			<property name="dialect" value="mysql" />
+			<property name="pageSqlId" value=".*FindByPage.*" />
+		</plugin>
+	</plugins> -->
+</configuration>
